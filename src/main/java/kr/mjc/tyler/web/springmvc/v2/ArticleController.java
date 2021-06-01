@@ -75,13 +75,15 @@ public class ArticleController {
     /**
      * 게시글 검색 화면
      * made by Tyler
+     *
      */
     @GetMapping("/articleSearch")
-    public void articleSearch(@RequestParam(value = "keyword") String keyword,
-                              Model model){
-        List<Article> articleSearch = articleDao.searchArticles(keyword);
-        model.addAttribute("articleSearch", articleSearch);
-    }
+          public void articleSearch(@RequestParam(value = "keyword") String keyword,
+                                    Model model){
+              List<Article> articleSearch = articleDao.searchArticles('%' + keyword + '%');
+              model.addAttribute("articleSearch", articleSearch);
+          }
+
     /**
      * 게시글 보기 화면
      */
