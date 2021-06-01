@@ -1,4 +1,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<style>
+    a {
+        color: darkgreen;
+    }
+    span {
+        color: darkgray;
+    }
+    nav {
+        background-color: lightblue;
+    }
+</style>
 <nav><span style="font-weight: bold;">[Spring MVC v2]</span> <a href="./">홈</a>
     <a href="./springmvc/v2/user/userList">사용자</a>
     <a href="./springmvc/v2/article/articleList">게시글</a>
