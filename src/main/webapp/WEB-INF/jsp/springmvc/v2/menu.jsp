@@ -1,13 +1,20 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <style>
-    a {
-        color: darkgreen;
+
+    nav a {
+        color: greenyellow;
+        margin: 5px;
+        padding: 10px;
+        text-decoration: none;
     }
     span {
-        color: darkgray;
+        color: silver;
     }
     nav {
-        background-color: lightblue;
+        background-color: midnightblue;
+        text-align: center;
+        margin: 10px 200px;
+        padding: 20px;
     }
 </style>
 <nav><span style="font-weight: bold;">[Spring MVC v2]</span> <a href="./">홈</a>
@@ -17,7 +24,7 @@
 
     <c:choose>
         <c:when test="${!empty sessionScope.USER}"><!-- 로그인을 했으면 -->
-            <a href="./springmvc/v2/user/userInfo">${sessionScope.USER.name}</a>님
+            <a href="./springmvc/v2/user/userInfo">${sessionScope.USER.name}님</a>
             <a href="./springmvc/v2/user/logout">로그아웃</a>
             <a href="./springmvc/v2/article/articleMy">${sessionScope.USER.name}님의게시글</a>
 

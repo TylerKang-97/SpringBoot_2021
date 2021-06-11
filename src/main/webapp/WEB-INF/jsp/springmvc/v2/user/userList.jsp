@@ -25,9 +25,23 @@
                style="width:50px;" step="10"/>행씩
     </p>
 </form>
-<c:forEach var="user" items="${userList}">
-    <p style="margin:0">${user.userId}, ${user.email}, ${user.name}</p>
-</c:forEach>
+<table>
+    <tr>
+        <th>회원번호</th>
+        <th>이메일</th>
+        <th>이름</th>
+    </tr>
+    <c:forEach var="user" items="${userList}">
+    <tr>
+            <td>${user.userId}</td>
+            <td>${user.email}</td>
+            <td>${user.name}</td>
+    </tr>
+    </c:forEach>
+</table>
+
+</table>
+
 <script>
     document.getElementById("btnPrev").onclick = function () {
         document.forms["form1"]["page"].value--;
