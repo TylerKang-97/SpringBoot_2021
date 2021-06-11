@@ -42,6 +42,8 @@ public class TomcatServerCustomizer
           new JspConfigDescriptorImpl(jspPropertyGroupDescriptors,
               new HashSet<>());
       context.setJspConfigDescriptor(jspConfigDescriptor);
+      // context.addWelcomeFile("/index.html");
+
     });
     factory.setTomcatContextCustomizers(col);
     log.info("톰캣 커스터마이저 실행");

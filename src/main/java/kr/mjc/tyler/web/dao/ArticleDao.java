@@ -27,6 +27,7 @@ public class ArticleDao {
       select articleId, title, userId, name, left(cdate,16) cdate, left(udate,16) udate
       from article where title like ? """;
 
+
   public static final String COUNT_ARTICLES = """
       select count(articleId) from article""";
 

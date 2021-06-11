@@ -44,7 +44,6 @@ public class ArticleController {
         session.setAttribute("currentPage", page);
         session.setAttribute("countPerPage", count);
     }
-
     /**
      * 내가 작성한 게시글 목록 화면
      @GetMapping("/articleMy")
@@ -58,6 +57,7 @@ public class ArticleController {
      @RequestParam(required = false, defaultValue = "1")
      // article.setUserId(user.getUserId());
      */
+
     /**
      * 사용자가 작성한 게시글 목록 화면
      * made by tyler
@@ -66,7 +66,7 @@ public class ArticleController {
     @GetMapping("/articleMy")
     public void articleMy(@SessionAttribute("USER") User user,
                           HttpSession session, Model model) {
-        int userId = user.getUserId();
+        int userId = user.getUserId(); // session에 있는 user
         List<Article> articleMy = articleDao.listMyArticles(userId);
         model.addAttribute("articleMy", articleMy);
         session.setAttribute("currentUser", userId);
