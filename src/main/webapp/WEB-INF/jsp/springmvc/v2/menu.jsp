@@ -16,8 +16,12 @@
         margin: 10px 200px;
         padding: 20px;
     }
+    nav img {
+        width: 200px;
+        height: 30px;
+    }
 </style>
-<nav><span style="font-weight: bold;">[Spring MVC v2]</span> <a href="./">홈</a>
+<nav><span><img src="./images/spring-logo.svg" class="logo"/></span> <a href="./">홈</a>
     <a href="./springmvc/v2/user/userList">사용자</a>
     <a href="./springmvc/v2/article/articleList">게시글</a>
     <a href="./springmvc/v2/article/articleSearch?keyword=">게시글 검색</a>

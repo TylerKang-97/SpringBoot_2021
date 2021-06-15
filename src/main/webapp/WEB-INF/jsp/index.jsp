@@ -35,6 +35,7 @@
 <p><a href="./springmvc/v2/user/loginForm">로그인</a></p>
 <p><a href="./springmvc/v2/user/userForm">회원가입</a></p>
 <p><a href="./springmvc/v2/article/articleList">게시글목록</a></p>
+<p><a href="./springmvc/v2/movie/movieList">영화목록</a></p>
 </div>
 </body>
 </html>
