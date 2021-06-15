@@ -89,12 +89,12 @@
     <thead>
     <tr>
         <th width="80px" scope="cols">영화번호</th>
-        <th scope="cols">게시글 제목</th>
-        <th width="90px" scope="cols">글쓴이</th>
-        <th width="150px" scope="cols">업로드 시간</th>
-        <th width="150px" scope="cols">업로드 시간</th>
-        <th width="150px" scope="cols">업로드 시간</th>
-        <th width="150px" scope="cols">업로드 시간</th>
+        <th width="150px" scope="cols">영화제목</th>
+        <th width="190px" scope="cols">(영어제목)</th>
+        <th width="100px" scope="cols">개봉일자</th>
+        <th width="100px" scope="cols">releseDate</th>
+        <th width="100px" scope="cols">국가</th>
+        <th width="100px" scope="cols">장르</th>
     </tr>
     </thead>
     <tbody>
